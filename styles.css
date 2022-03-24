@@ -1,9 +1,17 @@
+:root {
+  --mainbg: hsl(216, 12%, 8%);
+  --containerbg: hsl(213, 19%, 18%);
+  --text1: white;
+  --text2: hsl(25, 97%, 53%);
+  --text3: hsl(217, 12%, 63%);
+}
+
 body {
   margin: 0;
   font-family: "Overpass", sans-serif;
 }
 main {
-  background-color: hsl(216, 12%, 8%);
+  background-color: var(--mainbg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,15 +22,14 @@ main {
   border-radius: 1.8rem;
   max-width: 23rem;
 
-  background-color: hsl(213, 19%, 18%);
+  background-color: var(--containerbg);
 }
 .mainContainer2 {
   text-align: center;
   padding: 1.8rem 1.8rem 1.8rem 1.8rem;
   border-radius: 1.8rem;
   max-width: 23rem;
-
-  background-color: hsl(213, 19%, 18%);
+  background-color: var(--containerbg);
 }
 
 .starContainer {
@@ -40,12 +47,12 @@ main {
 }
 h1 {
   margin-top: 1.5rem;
-  color: white;
+  color: var(--text1);
   font-size: 1.5rem;
   font-weight: 700;
 }
 p {
-  color: hsl(217, 12%, 63%);
+  color: var(--text3);
   font-size: 0.85rem;
   font-weight: 400;
 }
@@ -56,7 +63,7 @@ p {
   justify-content: space-around;
 }
 .number {
-  color: hsl(217, 12%, 63%);
+  color: var(--text3);
   background-color: hsl(213, 16%, 25%);
   transition: 0.18s linear all;
   display: flex;
@@ -68,30 +75,30 @@ p {
   cursor: pointer;
 }
 .number:hover {
-  background-color: hsl(25, 97%, 53%);
-  color: white;
+  background-color: var(--text2);
+  color: var(--text1);
   transition: 0.2s linear all;
 }
 .btnCss {
   font-size: 0.85rem;
   font-weight: 700;
-  color: white;
+  color: var(--text1);
   padding: 0.7rem 0.5rem 0.5rem 0.5rem;
   border-radius: 1.25rem;
   margin: 2rem 0rem 0.2rem;
   border: none;
-  background-color: hsl(25, 97%, 53%);
+  background-color: var(--text2);
   cursor: pointer;
   transition: 0.2s linear all;
 }
 .btnCss:hover {
-  background-color: white;
-  color: hsl(25, 97%, 53%);
+  background-color: var(--text1);
+  color: var(--text2);
   transition: 0.2s linear all;
 }
 .selected {
   background-color: hsl(216, 12%, 54%);
-  color: white;
+  color: var(--text1);
 }
 .pleaseSelect {
   color: red;
@@ -101,7 +108,10 @@ p {
   padding: 0.5rem 1.3rem 0.3rem 1.3rem;
   border-radius: 1.5rem;
   text-align: center;
-  color: hsl(25, 97%, 53%);
+  color: var(--text2);
   font-size: 0.8rem;
   background-color: hsl(215, 11%, 21%);
+}
+.center {
+  text-align: center;
 }
