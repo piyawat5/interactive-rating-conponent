@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: "Overpass", sans-serif;
+}
+main {
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.mainContainer {
+  padding: 1.8rem 1.8rem 1.8rem 1.8rem;
+  border-radius: 1.8rem;
+  max-width: 23rem;
+
+  background-color: hsl(213, 19%, 18%);
+}
+.mainContainer2 {
+  text-align: center;
+  padding: 1.8rem 1.8rem 1.8rem 1.8rem;
+  border-radius: 1.8rem;
+  max-width: 23rem;
+
+  background-color: hsl(213, 19%, 18%);
+}
+
+.starContainer {
+  padding-left: 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(213, 16%, 25%);
+  border-radius: 2rem;
+  height: 2.2rem;
+  width: 2.2rem;
+}
+.starContainer img {
+  width: 40%;
+}
+h1 {
+  margin-top: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+p {
+  color: hsl(217, 12%, 63%);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.numberContainer {
+  margin-top: 1.3rem;
+  display: flex;
+  justify-content: space-around;
+}
+.number {
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(213, 16%, 25%);
+  transition: 0.18s linear all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  height: 2.8rem;
+  width: 2.8rem;
+  cursor: pointer;
+}
+.number:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  transition: 0.2s linear all;
+}
+.btnCss {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: white;
+  padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 1.25rem;
+  margin: 2rem 0rem 0.2rem;
+  border: none;
+  background-color: hsl(25, 97%, 53%);
+  cursor: pointer;
+  transition: 0.2s linear all;
+}
+.btnCss:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+  transition: 0.2s linear all;
+}
+.selected {
+  background-color: hsl(216, 12%, 54%);
+  color: white;
+}
+.pleaseSelect {
+  color: red;
+}
+.pointContainer {
+  margin: 2rem;
+  padding: 0.5rem 1.3rem 0.3rem 1.3rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  color: hsl(25, 97%, 53%);
+  font-size: 0.8rem;
+  background-color: hsl(215, 11%, 21%);
+}
